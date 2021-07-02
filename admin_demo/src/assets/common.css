@@ -1,0 +1,133 @@
+@charset "utf-8";
+*{
+    margin:0; padding:0;
+    }
+    body{
+        color: #333;
+        background-color: #e9eef3;
+        font:400 12px "PingFang SC", "Microsoft YaHei" ,Verdana,Arial,Helvetica,sans-serif;
+    }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0;  font-family: "微软雅黑"; }
+fieldset, img { border: 0; }
+ul, ol, li { list-style: none; font-family:'Microsoft YaHei'; }
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style: normal; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 {  font-weight: normal; }
+abbr, acronym { border: 0; font-variant: normal; }
+input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; background-color: #fff; border: none;}
+code, kbd, samp, tt { font-size: 100%; }
+a{text-decoration:none;}
+a:hover{
+    text-decoration: none;
+}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea{ *font-size: 100%;}
+/* ol, ul { list-style: none; } */
+
+/* tables still need 'cellspacing="0"' in the markup */
+table,tr,td { border-collapse: collapse; border-spacing: 0; margin:0;padding:0;}
+caption, th { text-align: left; }
+sup, sub { font-size: 100%; vertical-align: baseline; }
+
+/* remember to highlight anchors and inserts somehow! */
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/**Common Css**/
+.fr { float: right; *display: inline;}
+.fl { float: left; *display: inline;}
+/*文本超出显示省略号*/
+.ehn, .otw, .tow { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+/*清除浮动*/
+.clearfix { clear: both; *zoom:1;}
+.clearfix:after { display: block; clear: both; content: "\0020"; visibility: hidden; height: 0; }
+.demo_Layout{
+  width: 80%;
+  height: 100%;
+}
+.demo_Layout_fixed{
+    width: 150px;
+    max-height: 300px;
+    position: fixed;
+    top: 90px;
+    right: 30px;
+    border-left: 1px solid rgb(220, 223, 230);
+}
+.demo_Layout_fixed .demo_fixed_div {
+    margin: 3px 0px 3px 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+.demo_Layout_fixed .demo_fixed_div a{
+    color: #606266;
+    cursor: pointer;
+    font-size: 12px;
+}
+.demo_Layout_fixed .demo_fixed_div:hover a{
+    color: #409eff;
+    
+}
+.demo_Layout_fixed .demo_fixed_div:hover a{
+    text-decoration: revert;
+    color: #409eff;
+}
+.demo_Layout_fixed .demo_fixed_div .active{
+    color: #409eff;
+}
+.demo_Layout .title{
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+.demo_Layout p{
+    font-size: 14px;
+    color: #5e6d82;
+    line-height: 1.5em;
+}
+.box{
+    width: 100%;
+    height: 200px;
+}
+.demo_Layout .box_title{
+    margin: 30px 0 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.demo_Layout .box_block{
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    transition: .2s;
+    margin-top: 15px;
+}
+.demo_Layout .box_detail{
+    padding: 24px;
+}
+.demo_Layout .box_ul{
+    line-height: 2em;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #5e6d82;   
+
+}
+.demo_Layout .box_ul li{
+    list-style: disc;
+}
+.demo_Layout .tip{
+    padding: 8px 16px;
+    background-color: #ecf8ff;
+    border-radius: 4px;
+    border-left: 5px solid #50bfff;
+    margin: 20px 0;
+}
+.demo_Layout .tip a{
+    color: #409eff;
+}
+.demo_Layout .tip i{
+    font-size: 12px;
+    padding-left: 20px;
+}
